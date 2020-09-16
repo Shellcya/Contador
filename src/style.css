@@ -1,0 +1,45 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  
+  body {
+    
+    background:deeppink;
+  }
+  
+  .bloco {
+   margin-top: 8rem;
+  }
+  
+  .title {
+    color: white;
+    font-size: 3rem;
+    border: 2px dashed white;
+    text-align:center;
+  }
+  
+  .zero {
+    font-size:4rem;
+    color: white;
+    text-align:center;
+    padding:3rem;
+  }
+  
+  
+   
+   
+  .botoes {
+    display:flex;
+   justify-content:center;
+    align-items:center;
+  
+    
+  }
+  .adicionar, .reset,
+  .subtrair {
+   width:5rem;
+    margin:3rem;
+   
+  }
