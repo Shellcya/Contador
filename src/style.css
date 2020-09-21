@@ -1,45 +1,72 @@
 * {
-    margin: 0 ;
-    padding: 0;
-    box-sizing:border-box;
-  }
+  margin: 0 ;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+ 
+background: linear-gradient(to right, #243949, #517fa4 100%);
+}
+
+.bloco {
+ margin-top: 6rem;
+}
+
+.title {
+  color: white;
+  font-size: 4rem;
+  border: 2px dashed white;
+  text-align:center;
+   animation: neon 3s alternate infinite ease-in-out;
+}
+
+.zero {
+  font-size:7rem;
+  color: white;
+  text-align:center;
+  padding:3rem;
+  animation: neon 3s alternate infinite ease-in-out;
+}
+
+
+ 
+ 
+.botoes {
+  display:flex;
+ justify-content:center;
+  align-items:center;
+
   
-  body {
-    
-    background:deeppink;
+}
+.subtrair, .zerar,
+.adicionar {
+ width:7rem;
+  height:3rem;
+  margin:3rem;
+  background:#243949;
+  color:white;
+  font-size:1.5rem;
+  border:none;
+   animation: neon 3s alternate infinite ease-in-out;
+ }
+
+.zerar{
+  width:10rem;
+}
+
+.subtrair:hover, .zerar:hover,
+.adicionar:hover {
+cursor:pointer;
+background:#517fa4;
+border:none;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 #0FD9D2)
   }
-  
-  .bloco {
-   margin-top: 8rem;
+  to {
+     filter: drop-shadow(0 0 30px #0FD9D2)
   }
-  
-  .title {
-    color: white;
-    font-size: 3rem;
-    border: 2px dashed white;
-    text-align:center;
-  }
-  
-  .zero {
-    font-size:4rem;
-    color: white;
-    text-align:center;
-    padding:3rem;
-  }
-  
-  
-   
-   
-  .botoes {
-    display:flex;
-   justify-content:center;
-    align-items:center;
-  
-    
-  }
-  .adicionar, .reset,
-  .subtrair {
-   width:5rem;
-    margin:3rem;
-   
-  }
+}

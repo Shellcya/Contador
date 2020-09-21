@@ -9,12 +9,13 @@ const App = () => {
  
   return (
     <section className="bloco">
-     <h1 className="title">Vamos contar?</h1>
+     <h1 className="title">Counter</h1>
      <p className="zero">{contagem}</p>
+   
     <div className="botoes">
-      <button className="adicionar"  onClick={() => setContagem(contagem + 1)}>+</button>
-      <button className="reset" onClick={() => setContagem(0)}>reset</button>
       <button className="subtrair" onClick={() => setContagem(contagem - 1)}>-</button>
+      <button className="zerar" onClick={() => setContagem(0)}>0</button>
+      <button className="adicionar"  onClick={() => setContagem(contagem + 1)}>+</button>
     </div> 
     
     </section>
